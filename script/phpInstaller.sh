@@ -16,7 +16,7 @@ wget "https://www.php.net/distributions/php-7.3.27.tar.gz"
 tar -xzvf php-7.3.27.tar.gz
 rm php*gz
 cd php-7.3.27
-./configure --prefix=/usr/local/php --with-curl --with-freetype-dir --with-gd --with-gettext --with-iconv-dir --with-kerberos --with-libxml-dir --with-jpeg-dir --with-mysqli --with-openssl --with-pcre-regex --with-pdo-mysql --with-pdo-sqlite --with-pear --with-png-dir --with-xmlrpc --with-xsl --with-zlib --enable-fpm --enable-bcmath --enable-libxml --enable-inline-optimization --enable-mbregex --enable-mbstring --enable-opcache --enable-pcntl --enable-shmop --enable-soap --enable-sockets --enable-sysvsem --enable-xml --with-libdir=lib/x86_64-linux-gnu --enable-zip && make && sudo make install
+./configure --prefix=/usr/local/php --with-curl --with-freetype-dir --with-gd --with-gettext --with-iconv-dir --with-kerberos --with-libxml-dir --with-jpeg-dir --with-mysqli --with-openssl --with-pcre-regex --with-pdo-mysql --with-pdo-sqlite --with-pear --with-png-dir --with-xmlrpc --with-xsl --with-zlib --enable-fpm --enable-bcmath --enable-libxml --enable-inline-optimization --enable-mbregex --enable-mbstring --enable-opcache --enable-pcntl --enable-shmop --enable-soap --enable-sockets --enable-sysvsem --enable-xml --with-libdir=lib/$(arch)-linux-gnu --enable-zip && make && sudo make install
 groupadd php-fpm
 useradd -r -g php-fpm php-fpm
 chown -R php-fpm:php-fpm /usr/local/php/var
