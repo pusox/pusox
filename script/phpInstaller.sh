@@ -2,7 +2,7 @@
 #! https://github.com/Debuffxb/Some_Shell
 sudo apt update && sudo apt upgrade
 sudo apt install libxslt1-dev libfreetype6-dev freetype2-demos libpng* openssl libssl-dev libxml2-dev libxml2 libzip-dev libcurl4-gnutls-dev libjpeg-dev -y
-ln -s /usr/include/x86_64-linux-gnu/curl /usr/include/curl
+ln -s /usr/include/$(arch)-linux-gnu/curl /usr/include/curl
 wget "https://downloads.sourceforge.net/freetype/freetype-2.10.4.tar.xz"
 tar -xvf freetype-2.10.4.tar.xz
 cd free*4
