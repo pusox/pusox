@@ -1,8 +1,17 @@
 #! /bin/bash
-t=$(cat /etc/vim/vimrc.tiny | grep nocompatible | wc -l)
-if [ $t -eq 0 ]; then
+vimCompatible=$(cat /etc/vim/vimrc.tiny | grep nocompatible | wc -l)
+ClientAliveInterval=$(cat /etc/ssh/sshd_config | grep 'ClientAliveInterval 30' | wc -l)
+if [ $vimCompatible -eq 0 ]; then
+  echo 'Set Vim Config';
   sed -i "s/compatible/nocompatible/g" /etc/vim/vimrc.tiny
   echo 'set backspace=2' >> /etc/vim/vimrc.tiny
+  echo 'set ts=2' >> /etc/vim/vimrc.tiny
+  echo 'set expandtab' >> /etc/vim/vimrc.tiny
+fi
+if [ $ClientAliveInterval -eq 0 ]; then
+  echo 'Set SSH Alive Interval'
+  echo 'ClientAliveInterval 30' >> /etc/ssh/sshd_config
+  echo 'ClientAliveCountMax 86400' >> /etc/ssh/sshd_config
 fi
 apt update
 apt -y upgrade
