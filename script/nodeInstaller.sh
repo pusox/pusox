@@ -8,6 +8,7 @@ if [ $(arch) = 'aarch64' ]
 then
   arch='arm64'
 elif [ $(arch) = 'x86_64' ]
+then
   arch='x64'
 fi
 wget "https://nodejs.org/dist/v14.17.0/node-v14.17.0-linux-$arch.tar.xz" -O- | tar -xJvf -
