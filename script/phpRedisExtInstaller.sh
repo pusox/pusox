@@ -1,5 +1,5 @@
 #! /bin/sh
-apt install autoconf
+apt install autoconf -y
 wget "https://github.com/phpredis/phpredis/archive/refs/tags/5.3.4.tar.gz"
 tar -xzvf 5.3.4.tar.gz
 cd phpredis-5.3.4
