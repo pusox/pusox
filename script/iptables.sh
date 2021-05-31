@@ -15,5 +15,5 @@ COMMIT
 /sbin/iptables-restore < /etc/iptables.up.rules
 echo '#!/bin/sh
 /sbin/iptables-restore < /etc/iptables.up.rules' > /etc/network/if-pre-up.d/iptables
-echo 'alias save-iptables=iptables-save > /etc/iptables.up.rules'
+echo "alias save-iptables='iptables-save > /etc/iptables.up.rules'" >> .bashrc
 chmod +x /etc/network/if-pre-up.d/iptables
