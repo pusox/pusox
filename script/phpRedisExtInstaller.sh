@@ -8,4 +8,4 @@ cd phpredis-5.3.4
 make && make install
 echo 'extension_dir = "/usr/local/php/lib/php/extensions/no-debug-non-zts-20180731/"
 extension=redis.so' >> /usr/local/php/lib/php.ini
-service php-fpm status
+service php-fpm restart
