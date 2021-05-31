@@ -50,6 +50,8 @@ echo
 echo "Enable service of php-fpm"
 sudo systemctl enable php-fpm
 sudo systemctl start php-fpm
+echo 'PATH="$PATH:/usr/local/php/bin"' >> /etc/profile
+echo 'source /etc/profile'
 echo /###############
 echo 
 echo 
