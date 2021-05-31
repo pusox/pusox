@@ -11,8 +11,11 @@ echo "add group and user"
 echo 
 echo /###############
 echo 
-groupadd mysql
-useradd -r -g mysql mysql
+if [ $(cat /etc/passwd | grep mysql | wc -l) -eq 0 ]
+then
+  groupadd mysql
+  useradd -r -g mysql mysql
+fi
 /usr/local/mysql/bin/mysqld --initialize --user=mysql
 /usr/local/mysql/bin/mysql_ssl_rsa_setup
 ln -s /usr/local/mysql/bin/mysql /usr/bin/mysql
