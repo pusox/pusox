@@ -13,7 +13,7 @@ ExecStart=/usr/local/bin/redis-server
 PrivateTmp=true
 [Install]
 WantedBy=multi-user.target' > /etc/systemd/system/redis.service
-service start redis
-service enable redis
+systemctl start redis
+systemctl enable redis
 cd ../
 rm redis-6.2.3* -r
