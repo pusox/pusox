@@ -12,6 +12,7 @@ if [ $ClientAliveInterval -eq 0 ]; then
   echo 'Set SSH Alive Interval'
   echo 'ClientAliveInterval 30' >> /etc/ssh/sshd_config
   echo 'ClientAliveCountMax 86400' >> /etc/ssh/sshd_config
+  service sshd restart
 fi
 apt update
 apt -y upgrade
