@@ -1,5 +1,6 @@
 ```
-bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/A.sh")
+bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/_A.sh")
+bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/_S.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/deluge_1_3_5_Installer.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/deluge_2_0_3_Installer.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/ikoulaIPv6.sh")
