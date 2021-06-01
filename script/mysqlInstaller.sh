@@ -1,6 +1,6 @@
 #! /bin/bash
 #! https://github.com/Debuffxb/Some_Shell
-wget "https://mirrors.tuna.tsinghua.edu.cn/mysql/downloads/MySQL-5.7/mysql-5.7.33-linux-glibc2.12-x86_64.tar.gz"
+wget "https://downloads.mysql.com/archives/get/p/23/file/mysql-5.7.33-linux-glibc2.12-x86_64.tar.gz"
 sudo apt -y install libaio-dev libnuma-dev libncurses5
 tar -zvxf mysql*
 rm *gz*
