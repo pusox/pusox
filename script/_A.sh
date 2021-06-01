@@ -7,6 +7,8 @@ if [ $vimCompatible -eq 0 ]; then
   echo 'set backspace=2' >> /etc/vim/vimrc.tiny
   echo 'set ts=2' >> /etc/vim/vimrc.tiny
   echo 'set expandtab' >> /etc/vim/vimrc.tiny
+  echo 'set encoding=utf8' >> /etc/vim/vimrc.tiny
+  echo 'set fileencoding=utf8' >> /etc/vim/vimrc.tiny
 fi
 if [ $ClientAliveInterval -eq 0 ]; then
   echo 'Set SSH Alive Interval'
