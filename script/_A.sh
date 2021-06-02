@@ -18,4 +18,4 @@ if [ $ClientAliveInterval -eq 0 ]; then
 fi
 apt update
 apt -y upgrade
-apt install -y git gcc htop screen net-tools sysstat sudo
+apt install -y git gcc htop screen net-tools sysstat sudo dnsutils
