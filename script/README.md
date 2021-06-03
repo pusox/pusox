@@ -13,6 +13,7 @@ bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/nginxIn
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/nodeInstaller.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/phpInstaller.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/phpRedisExtInstaller.sh")
+bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/postgresInstaller.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/qBittorrentInstaller.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/qBittorrentInstaller2.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/redisInstaller.sh")
