@@ -18,6 +18,6 @@ now=0
 while(($now<$size))
 do
     echo ${NAMEs[$now]}' '${IPs[$now]}
-    /tmp/besttrace ${IPs[$now]}
+    /tmp/besttrace -T -g cn ${IPs[$now]}
     let "now++"
 done
