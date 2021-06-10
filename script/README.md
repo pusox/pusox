@@ -5,6 +5,7 @@ bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/besttra
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/deluge_1_3_5_Installer.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/deluge_2_0_3_Installer.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/enableBBR.sh")
+bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/frpsInstaller.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/ikoulaIPv6.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/iptables.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/ipv6.sh")
