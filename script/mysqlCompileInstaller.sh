@@ -1,6 +1,6 @@
 #! /bin/bash
 wget "https://downloads.mysql.com/archives/get/p/23/file/mysql-boost-5.7.33.tar.gz"
-sudo apt -y install libncurses5-dev gcc g++ cmake pkg-config
+sudo apt -y install libncurses5-dev gcc g++ cmake pkg-config libssl-dev
 tar -zvxf mysql*
 rm *gz
 cd mysql*
