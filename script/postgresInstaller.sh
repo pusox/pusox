@@ -3,7 +3,7 @@ apt install libreadline-dev -y
 tar -xzvf <(curl -Ls "https://ftp.postgresql.org/pub/source/v13.3/postgresql-13.3.tar.gz")
 cd po*3
 ./configure
-make -j$(nporc)
+make
 make install
 if [ $(cat /etc/passwd | grep pgsql | wc -l) -eq 0 ]
 then
