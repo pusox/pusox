@@ -19,9 +19,11 @@ After=network.target
 [Service]
 Type=forking
 User=pgsql
-ExecStart=/usr/local/pgsql/bin/pg_ctl -D /usr/local/pgsql/data -l /tmp/pgsql.log stop
+ExecStart=/usr/local/pgsql/bin/pg_ctl -D /usr/local/pgsql/data -l /tmp/pgsql.log start
 PrivateTmp=false
 
 [Install]
 WantedBy=multi-user.target' > /etc/systemd/system/pgsql.service
-./initdb -D /usr/local/pgsql/data -U pgsql -W
+echo 'su pgsql'
+echo 'cd /usr/local/pgsql/bin'
+echo './initdb -D /usr/local/pgsql/data -U pgsql -W'
