@@ -6,6 +6,6 @@ echo "menuentry 'New Install' {
 insmod part_msdos
 insmod ext2
 set root='(hd0,msdos1)'
-linux /boot/newinstall/vmlinuz
+linux /boot/newinstall/linux
 initrd /boot/newinstall/initrd.gz
 }"
