@@ -4,12 +4,14 @@ tar xzf redis-6.2.3.tar.gz
 cd redis-6.2.3
 make
 make install
+mkdir /usr/local/redis
+echo 'protected-mode no' > /usr/local/redis/redis.conf
 echo '[Unit]
 Description=Redis service
 After=network.target
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/redis-server
+ExecStart=/usr/local/bin/redis-server -c /usr/local/redis/redis.conf
 PrivateTmp=true
 [Install]
 WantedBy=multi-user.target' > /etc/systemd/system/redis.service
