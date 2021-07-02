@@ -11,7 +11,7 @@ Description=Redis service
 After=network.target
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/redis-server -c /usr/local/redis/redis.conf
+ExecStart=/usr/local/bin/redis-server /usr/local/redis/redis.conf
 PrivateTmp=true
 [Install]
 WantedBy=multi-user.target' > /etc/systemd/system/redis.service
