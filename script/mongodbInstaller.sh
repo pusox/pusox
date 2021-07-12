@@ -28,14 +28,14 @@ After=network.target
 [Service]
 Type=forking
 User=mongodb
-ExecStart=/usr/local/mongodb/mongod --dbpath /usr/local/mongodb/db --logpath /usr/local/mongodb/log/mongod.log --fork
-ExecStop=/usr/local/mongodb/mongod --dbpath /usr/local/mongodb/db --logpath /usr/local/mongodb/log/mongod.log --shutdown
+ExecStart=/usr/local/mongodb/bin/mongod --dbpath /usr/local/mongodb/db --logpath /usr/local/mongodb/log/mongod.log --fork
+ExecStop=/usr/local/mongodb/bin/mongod --dbpath /usr/local/mongodb/db --logpath /usr/local/mongodb/log/mongod.log --shutdown
 PrivateTmp=false
 
 [Install]
 WantedBy=multi-user.target' > /etc/systemd/system/mongodb.service
-sudo systemctl enable mongodb
-sudo systemctl start mongodb
+systemctl enable mongodb
+systemctl start mongodb
 echo 
 echo Congratuations!
 echo
