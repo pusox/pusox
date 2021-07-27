@@ -23,4 +23,5 @@ bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/qBittor
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/redisInstaller.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/speedtest.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/suzaku.sh")
+bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/transmissionInstaller.sh")
 ```
