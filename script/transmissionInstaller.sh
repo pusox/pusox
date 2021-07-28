@@ -5,7 +5,7 @@ wget "https://github.com/transmission/transmission-releases/raw/master/transmiss
 cd transmi*
 ./configure --prefix=/usr/local/transmission
 make && make install
-echo `[Unit]
+echo '[Unit]
 Description=transmission service
 After=network.target
 [Service]
@@ -13,4 +13,4 @@ Type=forking
 ExecStart=/usr/local/transmission/bin/transmission-daemon
 PrivateTmp=true
 [Install]
-WantedBy=multi-user.target` > /etc/systemd/system/transmission.service
+WantedBy=multi-user.target' > /etc/systemd/system/transmission.service
