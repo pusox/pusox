@@ -5,10 +5,17 @@ wget "https://github.com/transmission/transmission-releases/raw/master/transmiss
 cd transmi*
 ./configure --prefix=/usr/local/transmission
 make && make install
+if [ $(cat /etc/passwd | grep transmission | wc -l) -eq 0 ]
+then
+  groupadd transmission
+  useradd -r -g transmission transmission
+fi
 echo '[Unit]
 Description=transmission service
 After=network.target
 [Service]
+User=transmission
+Group=transmission
 Type=forking
 ExecStart=/usr/local/transmission/bin/transmission-daemon
 PrivateTmp=true
