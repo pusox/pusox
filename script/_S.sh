@@ -1,4 +1,5 @@
 #! /bin/bash
+export LS_OPTIONS='--color=auto'
 cat > ~/.bashrc << EOF
 export LS_OPTIONS='--color=auto'
 eval "`dircolors`"
