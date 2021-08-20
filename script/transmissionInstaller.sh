@@ -9,6 +9,8 @@ if [ $(cat /etc/passwd | grep transmission | wc -l) -eq 0 ]
 then
   groupadd transmission
   useradd -r -g transmission transmission
+  mkdir /home/transmission
+  chown -R transmission:transmission /home/transmission
 fi
 echo '[Unit]
 Description=transmission service
