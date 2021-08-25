@@ -11,7 +11,7 @@ elif [ $(arch) = 'x86_64' ]
 then
   arch='amd64'
 fi
-wget "https://github.com/prometheus/node_exporter/releases/download/v1.2.2/node_exporter-1.2.2.linux-$arch.tar.gz" -O- | tar -xJvf -
+wget "https://github.com/prometheus/node_exporter/releases/download/v1.2.2/node_exporter-1.2.2.linux-$arch.tar.gz" -O- | tar -xzvf -
 mv node_exporter* /usr/local/node_exporter
 echo '[Unit]
 Description=node_export
