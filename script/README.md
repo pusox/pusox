@@ -14,6 +14,7 @@ bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/mongodb
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/mysqlInstaller.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/mysqlCompileInstaller.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/nginxInstaller.sh")
+bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/nodeExporterInstaller.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/nodeInstaller.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/phpInstaller.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/phpRedisExtInstaller.sh")
