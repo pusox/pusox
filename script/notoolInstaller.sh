@@ -10,7 +10,9 @@ cd /usr/local
 git clone https://oath2:$TOKEN@gitlab.byakko.icu/pusox/notool
 if [ -d "/usr/local/notool" ]
 then
-  ln -s /usr/local/index.js /usr/local/bin/notool
+  cd notool
+  npm i
+  ln -s /usr/local/notool/index.js /usr/local/bin/notool
   echo 'PATH="$PATH:/usr/local/notool/sh"' >> /etc/profile
   echo 'source /etc/profile'
   exit
