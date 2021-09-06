@@ -17,6 +17,7 @@ bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/nginxIn
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/nodeExporterInstaller.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/nodeInstaller.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/notoolInstaller.sh")
+bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/npsInstaller.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/phpInstaller.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/phpRedisExtInstaller.sh")
 bash <(curl -Ls "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/script/postgresInstaller.sh")
