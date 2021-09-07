@@ -14,7 +14,7 @@ if [ -f "./suzaku" ]; then
 rm speedtest
 fi
 echo " 开始下载 suzaku client"
-wget -q "https://raw.githubusercontent.com/Debuffxb/Debuffxb/main/bin/client"
+wget -q "https://raw.githubusercontent.com/pusox/pusox/main/bin/client"
 mkdir '/usr/local/suzaku'
 mv client '/usr/local/suzaku/'
 chmod +x '/usr/local/suzaku/client'

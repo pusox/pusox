@@ -10,7 +10,7 @@ NAMEs[2]='苏州电信'
 NAMEs[3]='杭州联通'
 NAMEs[4]='杭州电信'
 
-wget "https://gitlab.byakko.icu/pusox/pusox/-/raw/main/bin/besttrace_$(arch)" -O /tmp/besttrace
+wget "https://raw.githubusercontent.com/pusox/pusox/main/bin/besttrace_$(arch)" -O /tmp/besttrace
 chmod +x /tmp/besttrace
 
 size=5
